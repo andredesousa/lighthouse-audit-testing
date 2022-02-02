@@ -1,8 +1,9 @@
 {
   "name": "lighthouse",
   "version": "1.0.0",
-  "description": "Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.",
+  "description": "Testing web sites with Google Lighthouse.",
   "scripts": {
+    "wizard": "lhci wizard",
     "check": "npm run lint && npm run test",
     "lint": "prettier --check \"test/**/*\"",
     "lint:fix": "prettier --write \"test/**/*\"",
@@ -12,7 +13,7 @@
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
-    "@lhci/cli": "^0.9.0",
+    "@lhci/cli": "^0.8.2",
     "husky": "^4.3.8",
     "lint-staged": "^12.1.2",
     "prettier": "^2.4.1",

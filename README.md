@@ -9,6 +9,19 @@ The tool audits the accessibility and SEO of your webpage, with a particular foc
 [Core Web Vitals](https://web.dev/i18n/pt/vitals/) are a set of metrics Google developed to measure web pages’ page speed and overall user experience.
 These metrics have become increasingly important for website owners that want to provide a good user experience and rank higher on Google.
 
+## Configuration
+
+A config file called `lighthouserc.json` at the `test` folder controls the options for Lighthouse CI.
+Next you need to configure the CI provider to run Lighthouse using the `lhci autorun` command.
+`autorun` will automatically execute a number of commands behind the scenes and infer sensible defaults for you.
+
+This project uses Lighthouse CI server in a Docker container, so first ensure you have Docker installed and running.
+You can use the `docker-compose up -d` command to startup Lighthouse CI server.
+Once the instance has started, navigate to <http://localhost:9001/> where you should see the dashboard welcome page.
+
+As detailed on the welcome page, you need to create a project for your Lighthouse results to be uploaded to.
+You can use `npm run wizard` command to walk you through these steps.
+
 ## Available npm scripts
 
 The scripts in [package.json](package.json) file were built with simplicity in mind to automate as much repetitive tasks as possible and help developers focus on what really matters.
@@ -32,7 +45,8 @@ Many problems can be automatically fixed with `npm run lint:fix`.
 ## Running audit tests
 
 Use `npm run test` to execute the unit tests via Lighthouse.
-You can see the HTML report opening it in your web browser.
+The HTML report is available in the `.lighthouseci` folder and you can opening it in your web browser.
+Lighthouse generates a HTML file for each page.
 
 ## Reference documentation
 
