@@ -47,7 +47,7 @@ After running the audit of your webpage, Lighthouse will generate a report on 4 
 
 - **Performance** includes elements that slow your page down, including images and resources.
 - **Accessibility** audits how accessible your content is to users, including the use of assistive technology. 
-- **Best Practices** identifies any web development element that does not follow current guidelines and best practices.
+- **Best Practices** identifies any web development element that does not follow best practices.
 - **SEO** highlights the most essential SEO issues with the webpage.
 
 The HTML report is available in the `.lighthouseci` folder and you can opening it in your web browser.
