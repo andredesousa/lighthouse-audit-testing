@@ -36,17 +36,22 @@ For more details, read the [npm scripts](https://docs.npmjs.com/cli/v8/using-npm
 ## Linting and formatting code
 
 Linters are also excellent tools for finding certain classes of bugs, such as those related to variable scope.
+
 Use `npm run lint` to analyze your code.
 Many problems can be automatically fixed with `npm run lint:fix`.
 
+Depending on your editor, you may want to add an editor extension to lint and format your code while you type or on-save.
+
 ## Running audit tests
+
+Audit tests are responsible for auditing the accessibility and SEO of your webpage, with a particular focus on [Core Web Vitals](https://web.dev/i18n/pt/vitals/).
 
 Use `npm run test` to execute the audit tests via Lighthouse.
 
 After running the audit of your webpage, Lighthouse will generate a report on 4 different areas:
 
 - **Performance** includes elements that slow your page down, including images and resources.
-- **Accessibility** audits how accessible your content is to users, including the use of assistive technology. 
+- **Accessibility** audits how accessible your content is to users, including the use of assistive technology.
 - **Best Practices** identifies any web development element that does not follow best practices.
 - **SEO** highlights the most essential SEO issues with the webpage.
 
@@ -59,6 +64,6 @@ For further reference, please consider the following articles:
 
 - [npm scripts](https://docs.npmjs.com/cli/v8/using-npm/scripts)
 - [Web Vitals](https://web.dev/i18n/en/vitals/)
-- [Measure the performance of a web application with Lighthouse CI ](https://medium.com/tuimm/measure-performance-web-app-with-lighthouse-ci-in-a-gitlab-pipeline-dd292842e40d)
+- [Measure the performance of a web application with Lighthouse CI](https://medium.com/tuimm/measure-performance-web-app-with-lighthouse-ci-in-a-gitlab-pipeline-dd292842e40d)
 - [A Performance and Optimization Tool for Webpages](https://betterprogramming.pub/lighthouse-a-performance-and-optimization-tool-for-webpages-e0b4eeaef3e4)
 - [Automating Google Lighthouse audits](https://keepinguptodate.com/pages/2021/07/automating-google-lighthouse-upload-to-azure/)
